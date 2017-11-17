@@ -15,8 +15,8 @@ library("plyr")
 library("data.table")
 
 #Functions
-source(paste(getwd(),"/R Scripts/Functions/Functions.R", sep=""))
-source(paste(getwd(),"/R Scripts/Functions/League Settings.R", sep=""))
+#source(paste(getwd(),"/R Scripts/Functions/Functions.R", sep=""))
+#source(paste(getwd(),"/R Scripts/Functions/League Settings.R", sep=""))
 
 #Projection Source Site Name
 suffix <- "espn"
