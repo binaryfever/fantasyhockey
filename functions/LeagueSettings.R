@@ -3,7 +3,7 @@
 # Description: User sets league settings
 # Author: Fred McHale
 # Notes: with inspiration from Isaac Petersen (isaac@fantasyfootballanalytics.net)
-# To do: Determine scorung rules
+# To do: Determine scoring rules
 ###########################
 
 #Roster
@@ -41,8 +41,8 @@ five_plus_goals_against_multiplier <- -6
 
 
 scoringRules <- list(
-    QB = data.frame(dataCol = c("passYds", "passTds", "passInt", "rushYds", "rushTds", "twoPts", "fumbles"),
-                    multiplier = c(1/25, 4, -3, 1/10, 6, 2, -3 )),
+    G = data.frame(dataCol = c("goalWins", "saves", "zeroGoalsAgainst", "oneGoalsAgainst", "twoGoalsAgainst", "threeGoalsAgainst", "fourGoalsAgainst", "zeroGoalsAgainst"
+                    multiplier = c(12, 8, 8, 1/10, 6, 2, -3 )),
     RB = data.frame(dataCol = c("rushYds", "rushTds", "rec", "recYds", "recTds", "returnTds", "twoPts", "fumbles"),
                     multiplier = c(1/10, 6, 0, 1/8, 6, 6, 2, -3)), 
     WR = data.frame(dataCol = c("rushYds", "rushTds", "rec", "recYds", "recTds", "returnTds", "twoPts", "fumbles"),
